@@ -34,13 +34,7 @@ public class Encoder {
 	 * Starts encoding.
 	 */
 	public void start() {
-	
-		try {
-			startEncoding();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
+		startEncoding();
 	}
 
 	/**
@@ -291,14 +285,6 @@ public class Encoder {
 	 */
 	public String cleanTelephoneNumber(String telephoneNumberToClean) {
 		return telephoneNumberToClean.replace("-", "").replace("/", "");
-	}
-
-	public Map<String, ArrayList<String>> getCache() {
-		return cache;
-	}
-
-	public void setCache(Map<String, ArrayList<String>> cache) {
-		this.cache = cache;
 	}
 
 }
